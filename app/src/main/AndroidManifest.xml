@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.douglimar.surpresinha_lotomania">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_lotomania"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_lotomania_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfiguradorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/title_activity_result2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>
